@@ -9,5 +9,12 @@ import { RouterOutlet } from '@angular/router';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'hello-world';
+  title = 'pippo';
+  numClick = 0;
+  buttonDisabled: boolean = false;
+
+  clickButton = () => {
+    this.buttonDisabled = true;
+    this.numClick++;
+  }
 }
